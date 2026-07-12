@@ -1,6 +1,7 @@
 # 🍎 Fruit Quality Detector
 
 🔗 **Live Demo:** [http://107.22.221.241](http://107.22.221.241)
+
 Note: hosted on AWS EC2 free tier — first request may take a few seconds while the model loads.
 
 A deep learning model that automatically classifies fruits as **fresh** or **rotten** using Convolutional Neural Networks (CNN) built with TensorFlow and Keras.
