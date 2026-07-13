@@ -85,9 +85,9 @@ Fruits_New/
 
 One goal of this project was to keep it deployable at **zero recurring cost** without sacrificing usability.
 
-- **Model compression:** The saved model initially included the optimizer state (needed only for resuming training, not for inference). Stripping the optimizer state reduced the model file size from **[300] MB to [97] MB**, which brought it under the free-tier deployment limits.
+- **Model compression:** The saved model initially included the optimizer state (needed only for resuming training, not for inference). Stripping the optimizer state reduced the model file size from **300 MB to 97 MB**, which brought it under the free-tier deployment limits.
 - **Hosting cost:** Currently deployed on **AWS EC2 free tier at $0/month**. No GPU or paid inference endpoint is used.
-- **Cost per identification:** At current traffic, cost per prediction is effectively **$0**. For reference, if this were scaled onto a pay-per-invocation service like AWS Lambda, cost would scale at roughly **$[0.12] per 1,000 predictions** (based on Lambda's per-request + compute-time pricing), making the current architecture significantly cheaper for low-to-moderate traffic use cases.
+- **Cost per identification:** At current traffic, cost per prediction is effectively **$0**. For reference, if this were scaled onto a pay-per-invocation service like AWS Lambda, cost would scale at roughly **$0.12 per 1,000 predictions** (based on Lambda's per-request + compute-time pricing), making the current architecture significantly cheaper for low-to-moderate traffic use cases.
 - **Trade-off:** This is a size/cost optimization, not an accuracy optimization — the underlying trained weights and prediction accuracy are unaffected by removing optimizer state.
 
 
