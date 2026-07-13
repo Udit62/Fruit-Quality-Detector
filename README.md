@@ -1,19 +1,19 @@
-🍎 Fruit Quality Detector
+🍎 **Fruit Quality Detector**
 
-🔗 Live Demo: http://107.22.221.241
+**🔗 **Live Demo:**** http://107.22.221.241
 
 Note: hosted on AWS EC2 free tier — first request may take a few seconds while the model loads.
 
 A deep learning model that automatically classifies fruits as fresh or rotten using Convolutional Neural Networks (CNN) built with TensorFlow and Keras.
 
 
-📌 Overview
-
+****📌 Overview
+****
 This project uses image classification to detect the quality of 6 common fruits. Given an input image, the model predicts whether the fruit is fresh or rotten — making it useful for automated quality control in food supply chains, grocery stores, or smart refrigerators.
 
 
-🍇 Supported Fruit Classes
-
+**🍇 Supported Fruit Classes
+**
 The model classifies images into 12 categories (fresh + rotten variants):
 
 FruitFresh LabelRotten LabelApplefreshapplesrottenapplesBananafreshbananarottenbananaMangofreshmangorottenmangoOrangefreshorangesrottenorangesPomegranatefreshpomegranaterottenpomegranateWatermelonfreshwatermelonrottenwatermelon
